@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <include
+        android:id="@+id/toolbarTop"
+        layout="@layout/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        android:background="#ffffff">
+
+        <!-- Título de la página -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Formulario de contacto"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#EC8E1B"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="32dp"/>
+
+        <!-- Campo de nombre -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nombre:"
+            android:textSize="16sp"
+            android:textColor="#EC8E1B"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Introduce tu nombre"
+            android:textColorHint="#cccccc"
+            android:textColor="#000000"
+            android:padding="8dp"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Campo de email -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email:"
+            android:textSize="16sp"
+            android:textColor="#EC8E1B"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Introduce tu email"
+            android:textColorHint="#cccccc"
+            android:textColor="#000000"
+            android:padding="8dp"
+            android:inputType="textEmailAddress"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Campo de mensaje -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mensaje:"
+            android:textSize="16sp"
+            android:textColor="#EC8E1B"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Introduce tu mensaje"
+            android:textColorHint="#cccccc"
+            android:textColor="#000000"
+            android:padding="8dp"
+            android:inputType="textMultiLine"
+            android:lines="5"
+            android:gravity="top"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Botón de enviar -->
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enviar"
+            android:textColor="#ffffff"
+            android:background="#EC8E1B"
+            android:padding="16dp"
+            android:textSize="16sp"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

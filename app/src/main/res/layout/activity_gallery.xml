@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="0dp"
+    android:layout_marginBottom="8dp"
+    app:cardCornerRadius="4dp"
+    app:cardElevation="2dp"
+    app:cardUseCompatPadding="true">
+
+
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:elevation="0dp"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/ToolBarStyle"
+        android:weightSum="1"
+        app:title="Gallery"
+        app:elevation="0dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="723dp"
+
+        >
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="128dp"
+            android:layout_marginEnd="4dp"
+            android:layout_marginBottom="16dp"
+            android:clipToPadding="true"
+            android:padding="8dp"
+            android:paddingStart="8dp"
+            android:paddingTop="16dp"
+            android:paddingEnd="16dp"
+            android:paddingBottom="16dp"
+            app:layoutManager="androidx.recyclerview.widget.StaggeredGridLayoutManager"
+            app:spanCount="2" />
+
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>
